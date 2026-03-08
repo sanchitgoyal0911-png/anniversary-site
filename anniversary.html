@@ -176,12 +176,20 @@ I can't wait for many more memories with you 💕
 
 <!-- Background Music -->
 
-<audio autoplay loop>
+<audio id="bgmusic" loop>
 <source src="music.mp3" type="audio/mpeg">
 </audio>
 
 
 <script>
+
+/* Start music on first click */
+
+document.addEventListener("click", function() {
+let music = document.getElementById("bgmusic");
+music.play();
+}, { once: true });
+
 
 /* Slideshow */
 
